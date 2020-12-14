@@ -1,4 +1,4 @@
-class MvgCard extends HTMLElement {
+class MvvCard extends HTMLElement {
     set hass(hass) {
   
       const entityId = this.config.entity;
@@ -143,4 +143,4 @@ class MvgCard extends HTMLElement {
     }
   }
   
-  customElements.define('mvg-card', MvgCard);
+  customElements.define('mvv-card', MvvCard);
