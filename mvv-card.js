@@ -3,6 +3,9 @@ class MvvCard extends HTMLElement {
   
       const entityId = this.config.entity;
       const state = hass.states[entityId];
+      if (!state.attributes) {
+        return;
+      }
       const name = state.attributes['station']
   
       if (!this.content) {
